@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+  
+<hibernate-configuration>  
+  <session-factory>  
+    <property name="hbm2ddl.auto">update</property>  
+  	<property name="connection.url">jdbc:postgresql://localhost:5432/EmployeeManagement</property>  
+    <property name="connection.username">postgres</property>  
+    <property name="connection.password">Sathees172003@</property>  
+    <property name="connection.driver_class">org.postgresql.Driver</property>  
+		<property name="hibernate.connection.pool_size">1</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>				
+    <mapping resource="employee.hbm.xml"/>  
+    </session-factory>   
+</hibernate-configuration>  
