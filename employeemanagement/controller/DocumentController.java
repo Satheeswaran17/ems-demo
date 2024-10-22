@@ -39,6 +39,8 @@ public class DocumentController {
             if (issueDate == null) {
                 System.out.println("Given Date formate is wrong");
             }
+
+            
             System.out.println("Successfully added");
             System.out.println(documentService.addDocument(documentNumber, type, issueDate, employeeId) + "\n");
             System.out.println("Do you want add another document (true/false)");
