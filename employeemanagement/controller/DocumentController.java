@@ -41,11 +41,7 @@ public class DocumentController {
             }
             System.out.println("Successfully added");
             System.out.println(documentService.addDocument(documentNumber, type, issueDate, employeeId) + "\n");
-<<<<<<< HEAD
-            System.out.println("Do you want add another document (true/false) if you want add another document");
-=======
             System.out.println("Do you want add another document");
->>>>>>> 6139ae4 (FIX: updated)
             userInput = scanner.nextBoolean();
             scanner.nextLine();
         } while (userInput);
